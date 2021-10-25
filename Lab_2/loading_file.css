@@ -1,0 +1,66 @@
+.file-upload input[type="file"]{
+
+display: none;/* ÑÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ input file */
+
+}
+
+.file-upload {
+
+position: relative;
+
+overflow: hidden;
+
+top: 10px;
+
+width: 200px;
+
+height: 40px;
+
+background: #3d404a;
+
+border-radius: 10px;
+
+color: #fff;
+
+text-align: center;
+
+}
+
+.file-upload:hover {
+
+background: #303438;
+
+}
+
+/* Ð Ð°ÑÑ‚ÑÐ³Ð¸Ð²Ð°ÐµÐ¼ label Ð½Ð° Ð²ÑÑŽ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ Ð±Ð»Ð¾ÐºÐ° .file-upload */
+
+.file-upload label {
+
+display: block;
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+width: 100%;
+
+height: 100%;
+
+cursor: pointer;
+
+}
+.file-upload span {
+
+line-height: 40px;
+
+font-weight:bold;
+
+}
+
+.block {
+ display: inline-block;
+ margin-top: 10px;
+ text-align: left;
+}
