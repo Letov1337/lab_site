@@ -21,9 +21,11 @@ function crawl_page($url, &$level)
         $OrigHost = parse_url($url, PHP_URL_HOST);
         //
         echo '<br>', PHP_EOL;
+        echo '==================================================================================';
         echo 'Site: ', $url, '<br>', PHP_EOL;
         echo 'Title: ', $CurrentTitle, '<br>', PHP_EOL;
-        echo '', count(explode('/', $path)),'', PHP_EOL;
+        echo 'Level: ', count(explode('/', $path)),'', PHP_EOL;
+        echo '==================================================================================';
         //echo 'Level: ', $level '<br>', PHP_EOL;
         foreach ($dom->getElementsByTagName('a') as $element) {
             if(($href = trim($element->getAttribute('href'))) && ($href <> '#') && ($href <> '/')) {
